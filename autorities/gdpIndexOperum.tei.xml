@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/gdpSchemaTEI.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!--
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   Guides de Paris, Index des œuvres
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <teiHeader type="text">
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="fre" type="main">Index operum</title>
+            <principal>
+               <persName ref="#MCL" full="yes">
+                  <forename full="yes">Marianne</forename>
+                  <surname full="yes">Cojannot-Le Blanc</surname>
+                  <affiliation>
+                     <orgName full="yes">Histoire des Arts &amp; Représentations</orgName>
+                     <orgName type="acronym" full="yes">HAR</orgName>
+                     <orgName type="alt" full="yes">EA 4414</orgName>
+                     <roleName full="yes">responsable scientifique</roleName>
+                  </affiliation>
+                  <affiliation>
+                     <orgName full="yes">Université Paris-Ouest Nanterre-La Défense</orgName>
+                     <orgName type="alt" full="yes">Paris 10</orgName>
+                     <roleName full="yes">Professeur d'histoire de l'art</roleName>
+                  </affiliation>
+               </persName>
+            </principal>
+            <funder>
+               <orgName full="yes">Labex Les Passés dans le Présent</orgName>
+               <date from="2013" to="2018">2013-2018</date>
+            </funder>
+            <respStmt>
+               <resp key="prg">modélisation XML-TEI</resp>
+               <persName ref="#EC" full="yes">
+                  <forename full="yes">Emmanuel</forename>
+                  <surname full="yes">Château</surname>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp key="prg">modélisation XML-TEI</resp>
+               <persName ref="#JM" full="yes">
+                  <forename full="yes">Josselin</forename>
+                  <surname full="yes">Morvan</surname>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp key="mrk">encodage</resp>
+               <persName ref="#EC" full="yes">
+                  <forename full="yes">Emmanuel</forename>
+                  <surname full="yes">Château</surname>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp key="mrk">encodage</resp>
+               <persName ref="#JM" full="yes">
+                  <forename full="yes">Josselin</forename>
+                  <surname full="yes">Morvan</surname>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1">première édition électronique, <date from="2013" to="2018"
+                  >2013-2018</date>
+            </edition>
+         </editionStmt>
+         <extent><!-- TODO : taille du fichier en octet --></extent>
+         <publicationStmt>
+            <authority>
+               <orgName full="yes">Histoire des Arts et Représentations</orgName>
+               <orgName type="acronym" full="yes">HAR</orgName>
+               <address>
+                  <addrLine>Université Paris Ouest-Nanterre La Défense</addrLine>
+                  <addrLine>UFR de Sciences Sociales et Administration (SSA)</addrLine>
+                  <addrLine>200, Avenue de la République</addrLine>
+                  <addrLine>92001 Nanterre Cedex</addrLine>
+                  <addrLine>France</addrLine>
+                  <addrLine>http://har.u-paris10.fr</addrLine>
+                  <addrLine>harparisouest@gmail.com</addrLine>
+               </address>
+            </authority>
+            <date when="2013">2013</date>
+            <!-- TODO attribuer un DOI ou un identifiant ARK aux fichiers -->
+            <idno>ark</idno>
+            <!-- responsable de la publication -->
+            <publisher>
+               <orgName full="yes">Histoire des Arts et Représentations</orgName>
+               <orgName type="acronym" full="yes">HAR</orgName>
+               <address>
+                  <addrLine>Université Paris Ouest-Nanterre La Défense</addrLine>
+                  <addrLine>UFR de Sciences Sociales et Administration (SSA)</addrLine>
+                  <addrLine>200, Avenue de la République</addrLine>
+                  <addrLine>92001 Nanterre Cedex</addrLine>
+                  <addrLine>France</addrLine>
+                  <addrLine>http://har.u-paris10.fr</addrLine>
+                  <addrLine>harparisouest@gmail.com</addrLine>
+               </address>
+            </publisher>
+            <availability status="restricted" xml:id="indexNominumTextLicence">
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>@todo Texte de la licence et image</p>
+               </licence>
+            </availability>
+         </publicationStmt>
+         <seriesStmt>
+            <title xml:lang="fre" type="main">Les Guides de Paris</title>
+            <title xml:lang="fre" type="sub"
+               >Les historiens des arts et les corpus numériques</title>
+            <idno type="URI">http://www.guidesdeparis.net</idno>
+         </seriesStmt>
+         <!--<notesStmt> <note xml:lang="fre" type="abstract">Texte de description pour DC.description</note> <note xml:lang="eng" type="abstract">Texte de description en anglais pour DC.description</note> </notesStmt>-->
+         <!-- description de la source -->
+         <sourceDesc xml:id="gdpIndexOperum" default="false">
+            <p>Fichier nativement numérique</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl default="false">
+            <stdVals default="false">
+               <p>On utilise...</p>
+            </stdVals>
+            <!-- TODO revoir -->
+         </editorialDecl>
+         <!-- déclaration concernant la méthode d'établissement du corpus (sélection) -->
+         <refsDecl default="false">
+            <p>Description du système de référence canonique.</p>
+            <!-- TODO revoir -->
+         </refsDecl>
+      </encodingDesc>
+      <!-- présentation du profil de fichier -->
+      <profileDesc>
+         <creation when="2013">2013</creation>
+         <langUsage default="false">
+            <language ident="fre" usage="100">Français (langue principale du corpus)</language>
+         </langUsage>
+         <textClass default="false">
+            <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
+               <term>18e siècle</term>
+               <term>France</term>
+            </keywords>
+            <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
+               <term>17th-18th centuries</term>
+               <term>France</term>
+            </keywords>
+            <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
+               <term>Text</term>
+               <!-- TODO qualifier -->
+            </classCode>
+         </textClass>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2014-02-01" who="#EC" status="draft">Création du fichier</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <head>Index operum</head>
+            <listObject>
+               <head>test</head>
+               <object xml:id="opTest">
+                  <objectName>Cathédrale Notre-Dame (Paris)</objectName>
+                  <!-- lido:title/name Title / Name (mandatory) -->
+                  <classification>
+                     <type>
+                        <label />
+                        <idno />
+                     </type>
+                     <!-- lido: Objet / Work type (mandatory) -->
+                     <category />
+                  </classification>
+                  <location />
+                  <state />
+                  <state />
+                  <dimensions>
+                     <dim />
+                  </dimensions>
+                  <desc>
+                     <div>
+                        <p />
+                     </div>
+                  </desc>
+                  <listEvent>
+                     <event>
+                        <label>creation</label>
+                        <date when="" />
+                        <author>
+                           <persName />
+                        </author>
+                        <place />
+                        <desc />
+                     </event>
+                  </listEvent>
+               </object>
+            </listObject>
+            <listObject>
+               <head>Maisons et hôtels particuliers</head>
+               <!-- gdpBrice1684T01BodyFr06 -->
+               <object xml:id="opHotelDeBourgogne">
+                  <objectName>Hôtel de Bourgogne (ancien)</objectName>
+                  <note>
+                     <p>Ce premier hôtel situé dans le quartier Montorgueil fut offert par les ducs de Bourgogne à la Confrérie de la Passion.</p>
+                  </note>
+                  <idno type="merimee"
+                     >https://www.pop.culture.gouv.fr/notice/merimee/PA00086026</idno>
+                  <idno type="wikidata">https://www.wikidata.org/wiki/Q60291383</idno>
+               </object>
+               <object xml:id="opMaisonDeMonsieurBerthelot">
+                  <objectName>Maison de Monsieur Berthelot</objectName>
+               </object>
+               <object xml:id="opMaisonDeMonsieurBerthelot">
+                  <objectName>Maison de Monsieur Berthelot</objectName>
+               </object>
+            </listObject>
+            <listObject>
+               <head>Lieux de culte et édifices conventuels</head>
+               <object xml:id="opEgliseDeLHopitalDeLaTrinite">
+                  <objectName>Église de l’hôpital de la Trinité</objectName>
+                  <idno type="wikipedia">https://fr.wikipedia.org/wiki/Hôpital_de_la_Trinité</idno>
+               </object>
+               <!-- sampling -->
+            </listObject>
+            <listObject>
+               <head>Bâtiments d’édilité</head>
+               <object xml:id="opTheatreDeLHotelDeBourgogne">
+                  <objectName>Théâtre de l’Hôtel de Bourgogne</objectName>
+                  <idno type="dataBnf"
+                     >https://data.bnf.fr/fr/13562091/theatre_de_l_hotel_de_bourgogne_paris/</idno>
+               </object>
+               <object xml:id="opGrandChatelet">
+                  <objectName>Grand Châtelet</objectName>
+                  <idno type="autBnf">https://catalogue.bnf.fr/ark:/12148/cb149507425</idno>
+                  <idno type="dataBnf">https://data.bnf.fr/fr/14950742/prison_du_grand-chatelet_paris/</idno>
+                  <idno type="wikidata">https://www.wikidata.org/wiki/Q673526</idno>
+               </object>
+               <!-- sampling -->
+            </listObject>
+            <listObject>
+               <head>Ponts et quais de Paris</head>
+               <object xml:id="opQuaiDeLaMegisserie">
+                  <objectName>Quai de la Mégisserie</objectName>
+                  <idno type="autBnf">https://catalogue.bnf.fr/ark:/12148/cb15928036r</idno>
+               </object>
+               <object xml:id="opPontAuChange">
+                  <objectName>Pont au Change</objectName>
+                  <idno type="autBnf">https://catalogue.bnf.fr/ark:/12148/cb13181920r</idno>
+                  <idno type="wikidata">https://www.wikidata.org/wiki/Q1327827</idno>
+               </object>
+               <object xml:id="opPontDeLaConcorde">
+                  <object>Pont de la Concorde</object>
+                  <idno type="autBnf">https://catalogue.bnf.fr/ark:/12148/cb162676974</idno>
+               </object>
+               <object xml:id="opPontDeLArcheveche">
+                  <objectName>Pont de l’Archevêché</objectName>
+                  <idno type="autBnf">https://catalogue.bnf.fr/ark:/12148/cb17095654s</idno>
+               </object>
+               <object xml:id="opPontLouisPhilippe">
+                  <objectName>Pont Louis-Philippe</objectName>
+                  <idno type="autBnf">https://catalogue.bnf.fr/ark:/12148/cb131819333</idno>
+               </object>
+               <object xml:id="opPontMarie">
+                  <objectName>Pont Marie</objectName>
+                  <idno type="autBnf">https://catalogue.bnf.fr/ark:/12148/cb159324191</idno>
+               </object>
+               <objet xml:id="opPontNeuf">
+                  <objectName>Pont Neuf</objectName>
+                  <idno type="autBnf">https://catalogue.bnf.fr/ark:/12148/cb11946452g</idno>
+               </objet>
+               <object xml:id="opPontRoyal">
+                  <objectName>Pont Royal</objectName>
+                  <idno type="autBnf">https://catalogue.bnf.fr/ark:/12148/cb15822081z</idno>
+               </object>
+               <object xml:id="opPontSaintLouis">
+                  <objectName>Pont Saint-Louis</objectName>
+                  <idno type="autBnf">https://catalogue.bnf.fr/ark:/12148/cb13181935s</idno>
+               </object>
+               <object xml:id="opPontSaintMichel">
+                  <objectName>Pont Saint-Michel</objectName>
+                  <idno type="autBnf">https://catalogue.bnf.fr/ark:/12148/cb15822081z</idno>
+               </object>
+               <!-- sampling -->
+            </listObject>
+            <listRelation>
+               <relation name="localised" passive="#opHotelDeBourgogne" active="#locRueMontorgueil" />
+               <relation name="owned" passive="#opHotelDeBourgogne" active="#nomDucsDeBourgogne" />
+               <relation name="owned" active="#orgConfrerieDeLaPassion"
+                  passive="#opHoteldeBourgogne" />
+               <relation name="localised" passive="#opEgliseDeLHopitalDeLaTrinite"
+                  active="#locRueSaintDenis" />
+               <relation name="owned" passive="#opEgliseDeLHopitalDeLaTrinite"
+                  active="#orgConfrerieDeLaPassion" />
+               <relation name="owned" active="#nomMonsieurBerthelot"
+                         passive="#opMaisonDeMonsieurBerthelot" />
+               <!-- sampling -->
+            </listRelation>
+         </div>
+      </body>
+   </text>
+</TEI>
