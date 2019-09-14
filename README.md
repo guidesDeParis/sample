@@ -2,6 +2,7 @@ sources
 =======
 
 This directory contains a sample of Guides de Paris’ sources.
+¡the ODD should be revised for  objects description and some aspects of the bibliographical DB!
 
 The *Guides de Paris* is a project f the Past and Present cluster ([Labex les Passés dans le présent : Histoire, patrimoine, mémoire](http://passes-present.eu/ "Site du Labex")).
 
